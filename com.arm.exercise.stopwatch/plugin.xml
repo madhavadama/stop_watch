@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Stop Watch"
+            id="com.arm.exercise.stopwatch.commands.category">
+      </category>
+      <command
+            name="Stop Watch"
+            categoryId="com.arm.exercise.stopwatch.commands.category"
+            id="com.arm.exercise.stopwatch.commands.stopwatch">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="com.arm.exercise.stopwatch.commands.stopwatch"
+            class="com.arm.exercise.stopwatch.handlers.StopWatchHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.arm.exercise.stopwatch.commands.stopwatch"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="Stop Watch"
+               mnemonic="M"
+               id="com.arm.exercise.stopwatch.menus.stopwatch">
+            <command
+                  commandId="com.arm.exercise.stopwatch.commands.stopwatch"
+                  mnemonic="S"
+                  icon="icons/clock.gif"
+                  id="com.arm.exercise.stopwatch.menus.stopwatch">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.arm.exercise.stopwatch.toolbars.stopwatch">
+            <command
+                  commandId="com.arm.exercise.stopwatch.commands.stopwatch"
+                  icon="icons/clock.gif"
+                  tooltip="Stop Watch"
+                  id="com.arm.exercise.stopwatch.toolbars.stopwatch">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

@@ -1,0 +1,55 @@
+
+1. Goal
+
+Design and implement the user interface for a stopwatch, running on the Eclipse platform. The
+stopwatch must have the following features:
+  - Start/Stop the watch. When the watch is running, elapsed minutes, seconds and milliseconds are 
+    updated on screen.
+  - Record split times. The user can indicate a sequence (split, lap) being completed. Individual 
+    split times are recorded and can be viewed on screen.
+  - Export split times. Export is to be mocked to take 2 seconds per recorded split time. During 
+    the export, sensible progress must be reported to the user. The stopwatch remains functional and 
+    recording split times is still possible, although split times recorded after the export started 
+    are ignored. Export can be cancelled at any moment.
+  - Reset watch. This resets the time and erases all split times.
+
+
+
+2. Supplied Code
+
+A model of the stopwatch is available in package com.arm.exercise.stopwatch.model. You are not 
+expected to change classes in this package and should assume they work.
+
+Several icons are provided in the icons/ directory should you need icons.
+
+
+
+3. UI Design Constraints
+
+The stopwatch must be available from one of the Eclipse menus and the toolbar. The menu and toolbar 
+items bring up a non-model dialog for the stopwatch, so that the user can operate the stopwatch 
+while doing others things. The stopwatch time must be displayed with a bigger font size than the 
+default font.
+
+
+
+4. Things to Consider
+
+  - Overall UI design and usability. There is not a single solution to this exercise, so make sure 
+    you can justify your design choices.
+  - Cross-platform look & feel. Let us know what you tested your solution on.
+  - Resize behaviour
+  - Resource management and performance
+  - String localisation. Only English strings are expected in the delivery, but the solution should 
+    be localisable.
+  - Code readability
+
+
+
+5. Delivery
+
+Add your code and required resources to this plug-in and send it back to us.
+
+Take as much time as you need. Send us good quality code, implementing all stated features to your 
+complete satisfaction.
+  

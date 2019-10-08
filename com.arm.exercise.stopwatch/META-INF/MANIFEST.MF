@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %bundleName
+Bundle-SymbolicName: com.arm.exercise.stopwatch;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: %bundleVendor
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.junit
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: com.arm.exercise.stopwatch.model
+Bundle-ClassPath: .,
+ swing2swt.jar
